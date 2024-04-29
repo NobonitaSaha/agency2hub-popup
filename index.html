@@ -51,6 +51,22 @@
 					<h3>+ 300 FREE SPINS</h3>
 				</div>
 
+				<div class="cookie-rate">
+					<div class="cookie-ratings">
+						<ul>
+							<li><i class="fa-solid fa-star"></i></li>
+							<li><i class="fa-solid fa-star"></i></li>
+							<li><i class="fa-solid fa-star"></i></li>
+							<li><i class="fa-solid fa-star"></i></li>
+							<li><i class="fa-solid fa-star"></i></li>
+						</ul>
+					</div>
+
+					<div class="cookie-score">
+						<h4>9.9 <small>/10</small></h4>
+					</div>
+				</div>
+
 				<div class="cookie-btn">
 					<div class="cookie-double-btn">
 						<a href="https://www.lukki.com/?stag=146098_662c97bf8261d9fc860c1048" target="_blank">
@@ -75,7 +91,7 @@
 			display: inline-block;
 			text-align: center;
 			top: -148px;
-			left: -156px;
+			left: -154px;
 		}
 		.text {
 			display: inline-block;
@@ -86,7 +102,7 @@
 			position: relative;
 			font-family: "Montserrat", sans-serif;
 			font-size: 13px;
-			text-transform: capitalize;
+			text-transform: uppercase;
 			color: #ffffff;
 			font-weight: 600;
 			text-align: -webkit-center;
@@ -97,32 +113,30 @@
 			color: #ffffff;
 			font-weight: 600;
 		}
-		.text:before,.text:after,
-		.bold:before{
+		.text:after{
 			content:'';
 			position:absolute;
 			border-style:solid;
 		}
 		.text:before {
-			bottom: 100%;
-			left: 1px;
-			border-width: 0.6em .9em 0 0;
-			border-color: transparent rgba(255, 4, 4, 0.689) transparent transparent;
+			content: ' ';
+			position: absolute;
+			height: 0;
+			width: 0;
+			bottom: -10px;
+			left: 0;
+			border-top: 10px solid #ab2121;
+			border-left: 10px solid transparent;
 		}
-		.text:after{
-			top:100%; 
-			right:0;
-			border-width: .5em 2em 0 0;
-			border-color: rgba(0, 0, 0, 0.3) transparent transparent transparent;
+
+		.text:after {
+			top: 3px;
+			right: -26px;
+			border-width: 16px 14px 8px 14px;
+			border-color: rgb(255 51 51) transparent transparent transparent;
+			transform: rotate(-90deg);
 		}
-		.bold:before{
-			top:0.5em;
-			right:-2em;
-			border-width: 1.1em 1em 1.1em 3em;
-			border-color: #ff3333ed transparent #ff3333ed  #ff3333ed;
-			z-index:-1;
-			font-weight: 500;
-		}
+		
 
 		.cookie-popup {
 			display: none;
@@ -205,6 +219,36 @@
 			margin-bottom: -10px;
 		}
 
+		.cookie-rate{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 12px;
+			margin: 15px 0px;
+		}
+
+		.cookie-ratings > ul{
+			list-style: none;
+		}
+
+		.cookie-ratings > ul > li{
+			display: inline-flex;
+			font-size: 15px;
+			color: #f5c22a;
+		}
+
+		.cookie-score > h4{
+			font-family: Teko, sans-serif;
+			font-size: 26px;
+			font-weight: 600;
+			color: #0c0c0c;
+		}
+
+		.cookie-score > h4 > small{
+			font-size: 16px;
+			color: #000000d7;
+		}
+
 		.cookie-double-btn button {
 			background: #009f40;
 			border: 0;
@@ -222,7 +266,7 @@
 			box-shadow: 0 3px 12px rgba(0, 0, 0, .25);
 			transition: all .15s ease-in-out;
 			border-radius: 100px;
-			margin: 30px 0px 20px 0px;  
+			margin: 0px 0px 20px 0px;  
 		}
 
 		.cookie-double-btn button:hover {
@@ -308,16 +352,35 @@
 
 			.ribbon {
 				top: -140px;
-				left: -115px;
+				left: -95px;
+			}
+			
+			.text {
+				padding: 0.7em 1em;
+				min-width: 170px;
+			}
+
+			.text:after {
+				top: -4px;
+				right: -38px;
+				border-width: 18px 18px 24px 18px;
 			}
 
             .cookie-text > h2 {
-                font-size: 45px;
-                margin: 35px 0px 10px 0px;
-            }
+				font-size: 45px;
+				margin: 15px 0px 10px 0px;
+			}
 
 			.cookie-double-btn button {
-				margin: 20px 0px 10px 0px;
+				margin: 10px 0px 10px 0px;
+			}
+			
+			.cookie-rate{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 12px;
+				margin: 15px 0px 0px 0px;
 			}
 		}
 
